@@ -117,6 +117,12 @@ section h3 {
   font-size: 13px;
 }
 
+@media print {
+	.item {
+		page-break-inside: avoid;
+	}
+}
+
 @font-face {
 	font-family: 'devicon';
 	src:url(/681fa39a79c22f0035a0720e2b2bda3b.eot);
