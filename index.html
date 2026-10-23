@@ -1,1 +1,23 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>cv</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><link href="/style.4800b.css" rel="stylesheet"></head><body><undefined></undefined><script defer="defer" src="/bundle.c53d2.js"></script><script>window.fetch||document.write('<script src="/polyfills.04c22.js"><\/script>')</script></body></html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Martin Šuba – CV</title>
+		<link rel="canonical" href="https://martinsuba.github.io/cv/" />
+		<meta http-equiv="refresh" content="0; url=/cv/" />
+		<meta name="robots" content="noindex" />
+		<script>
+			// Remove the service worker of the old site (it was registered at scope "/"), then redirect.
+			(async () => {
+				try {
+					const regs = (await navigator.serviceWorker?.getRegistrations?.()) ?? [];
+					await Promise.all(regs.map((r) => r.unregister()));
+				} catch (e) {}
+				location.replace('/cv/');
+			})();
+		</script>
+	</head>
+	<body>
+		<p>Moved to <a href="/cv/">martinsuba.github.io/cv/</a>.</p>
+	</body>
+</html>
